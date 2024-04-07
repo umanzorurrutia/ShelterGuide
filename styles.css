@@ -1,0 +1,308 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial; 
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Verdana !important;
+}
+
+#button{
+  background-color: rgba(255, 255, 255, 0.2); /* Adjust the last value (alpha) to change the opacity */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.front {
+  height: 85vh;
+  background-color:#227945;
+  justify-content: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  background-image: url(https://images.unsplash.com/photo-1523737000522-87c15d8efcc4?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8aG9tZWxlc3MlMjBzaGVsdGVyfGVufDB8fDB8fHwy);
+  background-size: cover;
+  background-position: center;
+  h1 { 
+    font-size: 60px; 
+    margin-bottom: 0;
+  }
+  p {
+    font-size: 20px;
+  }
+  .text {
+    text-align: center;
+    z-index: 2;
+  }
+}
+
+.front::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 85vh;
+  background-color: rgba(0, 0, 15, 0.8); /* Adjust the alpha value (last parameter) to control the opacity of the film effect */
+  z-index: 1; /* Ensure the film effect is behind the content */
+}
+
+.secondPage{
+  background: linear-gradient(rgba(69, 143, 69, 0.63), rgba(7, 78, 23, 0.63)) !important;
+  color: white;
+
+  img {
+    border-radius: 10px;
+  }
+}
+
+
+.about {
+  display: flex;
+  justify-content: center;
+  gap: 75px;
+  padding-top: 175px;
+  margin-left: 75px;
+  margin-right: 75px;
+  padding-bottom: 100px;
+}
+
+.aboutImg{
+  flex: 4;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+}
+
+.aboutImg img{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.aboutText{
+  flex: 2;
+  width:auto;
+  height: auto;
+  max-width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 1;
+}
+
+#aboutText{
+  align-self: center;
+  justify-content: right;
+  text-align: center;
+  font-family: georgia;
+  font-size: 3.5vw;
+  font-family: Verdana, Tahoma, sans-serif !important;
+}
+
+#aboutTextBio{
+  font-size: 1.75vw;
+  font-family: 'comic sans' !important;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  padding-top: 50px;
+}
+
+.Input, .Output {
+  flex: 1;
+  margin-left: 20px;
+  margin-right:20px;
+  margin-bottom: 200px; /*USE THIS TO CHANGE FOOTER VERTICAL ALIGNMENT*/
+}
+
+.Input {
+  display: flex;
+  flex-direction: column;
+  flex:1;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 85px;
+  gap: 50px;
+}
+
+#inputTitle{
+  font-size: 2.5vw;
+  text-align: center;
+  font-family: Verdana, Tahoma, sans-serif !important;
+}
+
+#location{
+  font-size: 2.5vw;
+  text-align: center;
+  font-family: 'comic sans' !important;
+}
+
+#destination{
+  font-size: 2.5vw;
+  text-align: center;
+  font-family: 'comic sans' !important;
+}
+
+#inputButton{
+  margin-left: 11vw;
+  font-size: 2.5vw;
+  font-family: 'comic sans' !important;
+}
+
+
+.Output{
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  justify-content: right;
+  align-items: center;
+  padding-left: 50px;
+  width: 20vw;
+}
+
+
+#outputImage {
+  max-width: 90%;
+}
+
+/* Nav Bar */
+.topnav {
+  z-index: 3;
+  width: 100vw;
+  position: fixed;
+  overflow: hidden;
+  background-color: #333;
+  height: 70px;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.topnav a {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 70px;
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 35px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #227945;
+  color: white;
+}
+
+.footer{
+  background-color: #333;
+  /* background-image: url(https://static.vecteezy.com/system/resources/previews/004/315/833/original/horizontal-abstract-landscape-background-with-mountains-in-green-palette-illustration-for-poster-print-vector.jpg);
+  background-size: cover;
+  background-position: center; */
+  height: 15vh;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+#footerText{
+  color: rgb(26, 25, 25);
+  text-align: center;
+  padding-top: 3px;
+  font-size: 25px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+.social-icons {
+  font-size: 30px; /* Adjust the size of the icons */
+  color: white;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .a { position: absolute; }
+footer h1 { position: absolute; }
+
+.icon-link {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.3s ease-in-out; /* Adding transition for smoothness */
+  margin-bottom: 6vh;
+}
+
+.icon-link:hover {
+  transform: scale(1.3); /* Scale the icon on hover */
+}
+
+
+/* search results page */
+.search-results {
+  height: 85vh;
+  background-color: rgba(69, 143, 69, 0.63);
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 3vw;
+
+  img {
+    padding-top: 15vh;
+    height: 30vh;
+    border-radius: 10px 10px 10px 10px !important;
+  }
+
+  p {
+    width: 50vw;
+    height: 25vw;
+    margin-left: 25vw;
+    overflow: hidden;
+    padding-top: 2vw;
+    text-align: top;
+    color: white;
+    font-size: 2.5vw;
+  }
+}
+
+#retryButton{
+  margin-bottom: 10vw;
+  font-size: 2.5vw;
+  font-family: 'comic sans';
+}
+
+.news{
+  height: 100vh;
+  background-color: rgba(69, 143, 69, 0.63);
+  text-align: center;
+  justify-content: center;
+}
+
+.contactPage{
+  height: 100vw;
+}
